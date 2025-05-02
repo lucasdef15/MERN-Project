@@ -3,7 +3,7 @@ const router = express.Router();
 const {
   getAllUsers,
   createNewUser,
-  uptadeUser,
+  updateUser,
   deleteUser,
 } = require('../controllers/usersControllers');
 
@@ -11,7 +11,7 @@ router
   .route('/')
   .get(getAllUsers)
   .post(createNewUser)
-  .patch(uptadeUser)
+  .patch(updateUser)
   .delete(deleteUser);
 
 module.exports = router;
